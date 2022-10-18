@@ -1,4 +1,4 @@
-# Tranformaçoes Geométrica Básicas em OpenGL
+# Tranformaçoes Geométricas Básicas em OpenGL
 
 Aplicar as transformações de Translação, Rotação e Escala à um triângulo.
 
