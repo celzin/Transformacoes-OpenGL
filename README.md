@@ -89,15 +89,15 @@ void desenha()
 	//Carrega a matriz identidade
 	glLoadIdentity();
   
-  //TRANSLACAO
+  	//TRANSLACAO
 	//Transladar(val x, val y, val z)
 	glTranslatef(0.0, 0.0, -50.0);
   
-  //ROTACAO
+  	//ROTACAO
 	//Rotacionar(angulo, val x, val y, val z)
 	glRotatef(30.0, 1.0, 1.0, 1.0);
 
-  //ESCALA
+ 	 //ESCALA
 	//Escalar(val x, val y, val z)
 	glScalef(0.5, 0.5, 0.5);
 
