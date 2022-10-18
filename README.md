@@ -159,7 +159,7 @@ int main(void)
 
 ## Cores.h
 
-Arquivo suporte para facilitar o uso de cores no projeto principal.
+Arquivo de cabeçalho que servirá de suporte para facilitar o uso de cores no projeto principal.
 
 ```cpp
 #pragma once
