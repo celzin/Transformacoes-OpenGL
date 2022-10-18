@@ -1,6 +1,10 @@
 # Tranformaçoes Geométrica Básicas em OpenGL
 
+Aplicar as transformações de Translação, Rotação e Escala à um triângulo.
+
 ## CMakeLists.txt
+
+Favor adicionar as linhas de código abaixo ao arquivo CMakeLists.txt para que possa ser criado um executável de acordo com as dependências utilizadas no projeto.
 
 ```c
 target_include_directories(Transformacoes PRIVATE dependencias/glm
@@ -19,6 +23,8 @@ target_link_libraries(Transformacoes PRIVATE glfw3.lib
 ```
 
 ## Transformacoes.cpp
+
+Código principal para executação da tarefa proposta.
 
 ```cpp
 #include<Windows.h>
@@ -152,6 +158,8 @@ int main(void)
 ```
 
 ## Cores.h
+
+Arquivo suporte para facilitar o uso de cores no projeto principal.
 
 ```cpp
 #pragma once
