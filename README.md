@@ -14,6 +14,8 @@ Aplicar as transformações de Translação, Rotação e Escala à um triângulo
 Primeiramente, favor adicionar as linhas de código abaixo ao arquivo CMakeLists.txt para que possa ser criado um executável de acordo com as dependências utilizadas no projeto.
 
 ```c
+add_executable(Transformacoes  "Transformacoes.cpp")
+
 target_include_directories(Transformacoes PRIVATE dependencias/glm
 						  dependencias/stb 
                                                   dependencias/glfw/include
