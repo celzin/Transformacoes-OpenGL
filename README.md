@@ -65,11 +65,23 @@ color cinza = { 0.8, 0.8, 0.8 };
 color laranja = { 1.0, 0.6, 0.2 };
 ```
 
+## Criando o Triângulo Base
+
+<p align="justify">
+
+Antes de realizar as transformações geométricas propostas é necessário criar um triângulo orignal (base), que, posteriormente, auxiliará na comparação com as transformações sofridas de uma segunda figura ao seu lado. Para isso, foi adotada a seguinte ideia:
+
+</p>
+
+```cpp
+
+```
+
 ## Transformações no OpenGL
 
 <p align="justify">
 
-Para realizar as transformações geométricas de Translação, Rotação e Escala, basicamente utilizou-se, respectivamente, das funções <code>glTranslatef(x, y, z)</code>, <code>glRotatef(Angulo, x, y, z)</code> e <code>glScalef(-x, -y, -z)</code>. Então segue a parte do código que realiza tais ações.
+Posteriormente, para realizar as transformações geométricas de Translação, Rotação e Escala, basicamente utilizou-se, respectivamente, das funções <code>glTranslatef(x, y, z)</code>, <code>glRotatef(Angulo, x, y, z)</code> e <code>glScalef(-x, -y, -z)</code>. Então segue a parte do código que realiza tais ações.
 
 </p>
 
@@ -95,6 +107,7 @@ void desenha()
 	desenhaTriangulo(5.0);
 }
 ```
+
 ## Translação
 
 <p align="justify">
@@ -102,6 +115,12 @@ void desenha()
 Para aplicar a trasnformação de **Translação** utilizaremos a função <code>glTranslatef(x, y, z)</code>, passando os valores dos pontos de trasnlação que desejamos em <code>(x, y, z)</code>, para assim transladar nossa figura.
 
 </p>
+
+<div align="center">
+<img src="" width="800px"/>
+
+**Figura 1: Visão da janela do terminal onde à direira temos a Translação do triângulo.**
+</div>
 
 ## Rotação
 
@@ -111,6 +130,12 @@ Para aplicar a trasnformação de **Rotação** ao triângulo utilizaremos a fun
 
 </p>
 
+<div align="center">
+<img src="" width="800px"/>
+
+**Figura 2: Visão da janela do terminal onde à direira temos a Rotação do triângulo.**
+</div>
+
 ## Escala
 
 <p align="justify">
@@ -118,6 +143,12 @@ Para aplicar a trasnformação de **Rotação** ao triângulo utilizaremos a fun
 Para aplicar a trasnformação de **Escala** ao triângulo utilizaremos a função <code>glScalef(x, y, z)</code>, passando os valores dos pontos de rotação que desejamos em <code>(x, y, z)</code>, para assim escalar nossa figura.
 
 </p>
+
+<div align="center">
+<img src="" width="800px"/>
+
+**Figura 3: Visão da janela do terminal onde à direira temos a Escala do triângulo.**
+</div>
 
 ## Reflexão
 
