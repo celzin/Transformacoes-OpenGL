@@ -7,11 +7,21 @@
   <img align="center" alt="OpenGL" src="https://img.shields.io/badge/OpenGL-%23FFFFFF.svg?style=for-the-badge&logo=opengl" />
 </div><br/>
 
-Aplicar as transformações de Translação, Rotação e Escala à um triângulo.
+## Abstract
+
+<p align="justify">
+
+A ideia geral do trabalho é aplicar as transformações de **Translação**, **Rotação**, **Escala** e **Reflexão** à uma figura geométrica triangular em [**OpenGL**](https://www.opengl.org/).
+
+</p>
 
 ## CMakeLists.txt
 
-Primeiramente, favor adicionar as linhas de código abaixo ao arquivo CMakeLists.txt para que possa ser criado um executável de acordo com as dependências utilizadas no projeto.
+<p align="justify">
+
+Primeiramente, afirmo que foi usada uma biblioteca diferente das apresentadas em sala, sendo ela a GLU. Então, favor adicionar as linhas de código abaixo ao arquivo <code>CMakeLists.txt</code> para que possa ser criado um executável de acordo com as dependências utilizadas no projeto. 
+
+</p>
 
 ```c
 add_executable(Transformacoes  "Transformacoes.cpp")
@@ -33,7 +43,11 @@ target_link_libraries(Transformacoes PRIVATE glfw3.lib
 
 ## Cores.h
 
+<p align="justify">
+
 Em segundo plano, foi criado um arquivo de cabeçalho que servirá de suporte para facilitar o uso de cores no projeto principal. Segue abaixo seu conteúdo.
+
+</p>
 
 ```cpp
 #pragma once
@@ -52,7 +66,12 @@ color laranja = { 1.0, 0.6, 0.2 };
 ```
 
 ## Transformações no OpenGL
-Para realizar as transformações geométricas de Translação, Rotação e Escala, basicamente utilizou-se, respectivamente, das funções glTranslatef, glRotatef e glScalef. Então segue a parte do código que realiza tais ações.
+
+<p align="justify">
+
+Para realizar as transformações geométricas de Translação, Rotação e Escala, basicamente utilizou-se, respectivamente, das funções <code>glTranslatef(x, y, z)</code>, <code>glRotatef(Angulo, x, y, z)</code> e <code>glScalef(-x, -y, -z)</code>. Então segue a parte do código que realiza tais ações.
+
+</p>
 
 ```cpp
 void desenha()
@@ -76,8 +95,37 @@ void desenha()
 	desenhaTriangulo(5.0);
 }
 ```
+## Translação
+
+<p align="justify">
+
+Para aplicar a trasnformação de **Translação** utilizaremos a função <code>glTranslatef(x, y, z)</code>, passando os valores dos pontos de trasnlação que desejamos em <code>(x, y, z)</code>, para assim transladar nossa figura.
+
+</p>
+
+## Rotação
+
+<p align="justify">
+
+Para aplicar a trasnformação de **Rotação** ao triângulo utilizaremos a função <code>glRotatef(Angulo, x, y, z)</code>, , passando o valor do ângulo que queremos rotacionar a figura e os valores dos pontos de rotação que desejamos em <code>(Angulo, x, y, z)</code>, para assim rotacionar nossa figura.
+
+</p>
+
+## Escala
+
+<p align="justify">
+
+Para aplicar a trasnformação de **Escala** ao triângulo utilizaremos a função <code>glScalef(x, y, z)</code>, passando os valores dos pontos de rotação que desejamos em <code>(x, y, z)</code>, para assim escalar nossa figura.
+
+</p>
 
 ## Reflexão
+
+<p align="justify">
+
+Para aplicar a trasnformação de **Reflexão** ao triângulo utilizaremos a função <code>glScalef(-x, -y, -z)</code>, porém com seus valores invertidos, ou seja, negativos, para assim refletir nossa figura.
+
+</p>
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/84411392/196703482-a6ce86ee-a2bf-4bfa-9753-450bb27b6c15.png" width="800px"/>
