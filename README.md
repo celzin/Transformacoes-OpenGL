@@ -77,6 +77,12 @@ Antes de realizar as transformações geométricas propostas é necessário cria
 
 ```
 
+<div align="center">
+<img src="" width="800px"/>
+
+**Figura 1: Visão da janela do terminal onde temos nosso triângulo base.**
+</div>
+
 ## Transformações no OpenGL
 
 <p align="justify">
@@ -119,7 +125,7 @@ Para aplicar a trasnformação de **Translação** utilizaremos a função <code
 <div align="center">
 <img src="" width="800px"/>
 
-**Figura 1: Visão da janela do terminal onde à direira temos a Translação do triângulo.**
+**Figura 2: Visão da janela do terminal onde à direira temos a Translação do triângulo.**
 </div>
 
 ## Rotação
@@ -133,7 +139,7 @@ Para aplicar a trasnformação de **Rotação** ao triângulo utilizaremos a fun
 <div align="center">
 <img src="" width="800px"/>
 
-**Figura 2: Visão da janela do terminal onde à direira temos a Rotação do triângulo.**
+**Figura 3: Visão da janela do terminal onde à direira temos a Rotação do triângulo.**
 </div>
 
 ## Escala
@@ -147,7 +153,7 @@ Para aplicar a trasnformação de **Escala** ao triângulo utilizaremos a funç�
 <div align="center">
 <img src="" width="800px"/>
 
-**Figura 3: Visão da janela do terminal onde à direira temos a Escala do triângulo.**
+**Figura 4: Visão da janela do terminal onde à direira temos a Escala do triângulo.**
 </div>
 
 ## Reflexão
@@ -161,5 +167,5 @@ Para aplicar a trasnformação de **Reflexão** ao triângulo utilizaremos a fun
 <div align="center">
 <img src="https://user-images.githubusercontent.com/84411392/196703482-a6ce86ee-a2bf-4bfa-9753-450bb27b6c15.png" width="800px"/>
 
-**Figura 4: Visão da janela do terminal onde à direira temos a Reflexão do triângulo.**
+**Figura 5: Visão da janela do terminal onde à direira temos a Reflexão do triângulo.**
 </div>
