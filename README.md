@@ -92,7 +92,7 @@ void desenhaTriangulo(float s)
 <div align="center">
 <img src="https://user-images.githubusercontent.com/84411392/196824842-b2cad841-6f84-489c-8e6b-a872da6fd565.png" width="800px"/>
 
-**Figura 1: Visão da janela do terminal onde temos nosso triângulo base.**
+**Figura 1:** Visão da janela do terminal onde temos nosso **triângulo base**.
 </div>
 
 ## Transformações no OpenGL
@@ -164,7 +164,7 @@ void desenha()
 <div align="center">
 <img src="https://user-images.githubusercontent.com/84411392/196825023-3be2245a-2781-4962-83e8-6e93e6497d76.png" width="800px"/>
 
-**Figura 2: Visão da janela do terminal onde à direira temos a Translação do triângulo.**
+**Figura 2:** Visão da janela do terminal onde à direira temos a **Translação** do triângulo.
 </div>
 
 ## Rotação
@@ -205,7 +205,7 @@ void desenha()
 <div align="center">
 <img src="https://user-images.githubusercontent.com/84411392/196825358-8323f246-92f5-4bb7-a1a3-4bc59a6dd87b.png" width="800px"/>
 
-**Figura 3: Visão da janela do terminal onde à direira temos a Rotação do triângulo.**
+**Figura 3:** Visão da janela do terminal onde à direira temos a **Rotação** do triângulo.
 </div>
 
 ## Escala
@@ -246,7 +246,7 @@ void desenha()
 <div align="center">
 <img src="https://user-images.githubusercontent.com/84411392/196825688-c3194460-fc10-4598-b96c-be02f93e1fbc.png" width="800px"/>
 
-**Figura 4: Visão da janela do terminal onde à direira temos a Escala do triângulo.**
+**Figura 4:** Visão da janela do terminal onde à direira temos a **Escala** do triângulo.
 </div>
 
 ## Reflexão
@@ -287,5 +287,5 @@ void desenha()
 <div align="center">
 <img src="https://user-images.githubusercontent.com/84411392/196703482-a6ce86ee-a2bf-4bfa-9753-450bb27b6c15.png" width="800px"/>
 
-**Figura 5: Visão da janela do terminal onde à direira temos a Reflexão do triângulo.**
+**Figura 5:** Visão da janela do terminal onde à direira temos a **Reflexão** do triângulo.
 </div>
