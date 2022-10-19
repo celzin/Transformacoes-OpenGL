@@ -76,3 +76,11 @@ void desenha()
 	desenhaTriangulo(5.0);
 }
 ```
+
+## Reflexão
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/84411392/196703482-a6ce86ee-a2bf-4bfa-9753-450bb27b6c15.png" width="800px"/>
+
+**Figura 1: Visão geral da arquitetura do [MINIX 3](https://www.minix3.org/) (adaptado de [Herder et al., 2006]).**
+</div>
