@@ -74,11 +74,23 @@ Antes de realizar as transformações geométricas propostas é necessário cria
 </p>
 
 ```cpp
+//Funcao que define a forma geometrica
+void desenhaTriangulo(float s)
+{
+	float d = s / 0.5;
 
+	//Definindo os vertices
+	float v1[3] = { 0.0, d, 0.0 };
+	float v2[3] = { -d, -d, 0.0 };
+	float v3[3] = { d, -d, 0.0 };
+
+	//frente
+	rect(v1, v2, v3, violeta);
+}
 ```
 
 <div align="center">
-<img src="" width="800px"/>
+<img src="https://user-images.githubusercontent.com/84411392/196824842-b2cad841-6f84-489c-8e6b-a872da6fd565.png" width="800px"/>
 
 **Figura 1: Visão da janela do terminal onde temos nosso triângulo base.**
 </div>
@@ -122,8 +134,35 @@ Para aplicar a trasnformação de **Translação** utilizaremos a função <code
 
 </p>
 
+```cpp
+void desenha()
+{
+	//Criando o 1º triangulo
+	
+	//Inicializa na matriz identidade
+	glLoadIdentity();
+
+	//TRANSLACAO
+	//Transladar(/val x, val y, val z)
+	glTranslatef(-20.0, 0.0, -50.0);
+	desenhaTriangulo(5.0);
+	
+	//Fim da criacao do 1º triangulo
+
+	//Permite que a matriz seja reinicializada na matriz identidade
+	glLoadIdentity();
+	
+	//Criando o 2º triangulo transladado
+	
+	glTranslatef(20.0, 10.0, -50.0);
+	desenhaTriangulo(5.0);
+	
+	//Fim da criacao do 2º triangulo
+}
+```
+
 <div align="center">
-<img src="" width="800px"/>
+<img src="https://user-images.githubusercontent.com/84411392/196825023-3be2245a-2781-4962-83e8-6e93e6497d76.png" width="800px"/>
 
 **Figura 2: Visão da janela do terminal onde à direira temos a Translação do triângulo.**
 </div>
@@ -136,8 +175,35 @@ Para aplicar a trasnformação de **Rotação** ao triângulo utilizaremos a fun
 
 </p>
 
+```cpp
+void desenha()
+{
+	//Criando o 1º triangulo
+	
+	//Inicializa na matriz identidade
+	glLoadIdentity();
+	
+	//ROTACAO
+	//Rotacionar(angulo, val x, val y, val z)
+	glRotatef(0.0, 1.0, 1.0, 1.0);
+	desenhaTriangulo(5.0);
+
+	//Fim da criacao do 1º triangulo
+
+	//Permite que a matriz seja reinicializada na matriz identidade
+	glLoadIdentity();
+	
+	//Criando o 2º triangulo rotacionado em 30°
+	
+	glRotatef(30.0, 1.0, 1.0, 1.0);
+	desenhaTriangulo(5.0);
+	
+	//Fim da criacao do 2º triangulo
+}
+```
+
 <div align="center">
-<img src="" width="800px"/>
+<img src="https://user-images.githubusercontent.com/84411392/196825358-8323f246-92f5-4bb7-a1a3-4bc59a6dd87b.png" width="800px"/>
 
 **Figura 3: Visão da janela do terminal onde à direira temos a Rotação do triângulo.**
 </div>
@@ -150,8 +216,35 @@ Para aplicar a trasnformação de **Escala** ao triângulo utilizaremos a funç�
 
 </p>
 
+```cpp
+void desenha()
+{
+	//Criando o 1º triangulo
+	
+	//Inicializa na matriz identidade
+	glLoadIdentity();
+
+	//ESCALA
+	//Escalar(val x, val y, val z)
+	glScalef(1.0, 1.0, 1.0);
+	desenhaTriangulo(5.0);
+
+	//Fim da criacao do 1º triangulo
+
+	//Permite que a matriz seja reinicializada na matriz identidade
+	glLoadIdentity();
+	
+	//Criando o 2º triangulo na escala 0.5
+	
+	glScalef(0.5, 0.5, 0.5);
+	desenhaTriangulo(5.0);
+	
+	//Fim da criacao do 2º triangulo
+}
+```
+
 <div align="center">
-<img src="" width="800px"/>
+<img src="https://user-images.githubusercontent.com/84411392/196825688-c3194460-fc10-4598-b96c-be02f93e1fbc.png" width="800px"/>
 
 **Figura 4: Visão da janela do terminal onde à direira temos a Escala do triângulo.**
 </div>
@@ -163,6 +256,33 @@ Para aplicar a trasnformação de **Escala** ao triângulo utilizaremos a funç�
 Para aplicar a trasnformação de **Reflexão** ao triângulo utilizaremos a função <code>glScalef(-x, -y, -z)</code>, porém com seus valores invertidos, ou seja, negativos, para assim refletir nossa figura.
 
 </p>
+
+```cpp
+void desenha()
+{
+	//Criando o 1º triangulo
+	
+	//Inicializa na matriz identidade
+	glLoadIdentity();
+
+	//ESCALA
+	//Escalar(val x, val y, val z)
+	glScalef(1.0, 1.0, 1.0);
+	desenhaTriangulo(5.0);
+
+	//Fim da criacao do 1º triangulo
+
+	//Permite que a matriz seja reinicializada na matriz identidade
+	glLoadIdentity();
+	
+	//Criando o 2º triangulo refletido
+	
+	glScalef(-1.0, -1.0, -1.0);
+	desenhaTriangulo(5.0);
+	
+	//Fim da criacao do 2º triangulo
+}
+```
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/84411392/196703482-a6ce86ee-a2bf-4bfa-9753-450bb27b6c15.png" width="800px"/>
