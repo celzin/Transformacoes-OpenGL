@@ -82,5 +82,5 @@ void desenha()
 <div align="center">
 <img src="https://user-images.githubusercontent.com/84411392/196703482-a6ce86ee-a2bf-4bfa-9753-450bb27b6c15.png" width="800px"/>
 
-**Figura 4: Visão da janela do terminal na transformação de Reflexão.**
+**Figura 4: Visão da janela do terminal onde à direira temos a Reflexão do triângulo.**
 </div>
