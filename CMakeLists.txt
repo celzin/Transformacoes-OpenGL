@@ -45,19 +45,3 @@ target_link_libraries(Transformacoes PRIVATE glfw3.lib
 									    glew32.lib
 										opengl32.lib
 										glu32.lib)
-
-add_executable(Cubo  "Cubo.cpp")
-
-target_include_directories(Cubo PRIVATE dependencias/glm
-											dependencias/stb
-											dependencias/glfw/include
-											dependencias/glew/include
-											dependencias/glu/include)
-
-target_link_directories(Cubo PRIVATE dependencias/glfw/lib-vc2022
-										 dependencias/glew/lib/Release/x64)
-
-target_link_libraries(Cubo PRIVATE glfw3.lib
-									    glew32.lib
-										opengl32.lib
-										glu32.lib)
