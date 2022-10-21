@@ -19,7 +19,7 @@ A ideia geral do trabalho é aplicar as transformações de **Translação**, **
 
 <p align="justify">
 
-Primeiramente, afirmo que foi usada uma biblioteca diferente das apresentadas em sala, sendo ela a GLU. Então, favor adicionar as linhas de código abaixo ao arquivo <code>CMakeLists.txt</code> para que possa ser criado um executável de acordo com as dependências utilizadas no projeto. 
+Primeiramente, afirmo que foi usada uma biblioteca diferente das apresentadas em sala, sendo ela a **glu32.lib **. Então, favor adicionar as linhas de código abaixo ao arquivo <code>CMakeLists.txt</code> para que possa ser criado um executável de acordo com as bibliotecas utilizadas no projeto **OU** utilize o arquivo <code>CMakeLists.txt</code> disponibilizado.
 
 </p>
 
